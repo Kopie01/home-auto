@@ -45,6 +45,7 @@ nav{
         
 }
 
+ // css for general box
 .box{
             color: $text-color;
             background-color: $secondary-color;  
@@ -52,25 +53,54 @@ nav{
             padding: 20px 16px;
             text-decoration: none;
             font-family: sans-serif;
-            margin-bottom: 5px;
+            margin-bottom: 2px;
             border-radius: 10px;
+            margin-left: 5px;
+            
+            
+}
+
+// css for box at 60% for mobile and portrait tablet layout
+.width-60{
             width: 60%;
 }
 
-.test{
+// css for box at 100% for mobile and portrait tablet layout
+.width-100{
+            width: 100%;
+}
+
+.camera-box1{
+    margin-bottom: 20px;
+    width:40%;
+    display: inline-block;
+
+}
+.camera-screen1 {
+            background-color: gray;
+            padding:10px;
+            height: 70px;
+            border-radius: 10px 10px 0px 0px;
+}
+
+.title-camera-box {
+            background-color: $secondary-color;
+            padding:10px;
             color: $text-color;
-            background-color: $secondary-color;  
-            display:inline-block;
-            padding: 20px 16px;
-            text-decoration: none;
             font-family: sans-serif;
-            margin-bottom: 5px;
-            border-radius: 10px;
+            padding: 20px;
+            border-radius: 0px 0px 10px 10px;
+}
+
+.margin-right {
+    margin-right: 10px;
 }
 
 .container{
-    width: 360px;
+    width: 90%;
     height: 640px;
+    // background-color: #bc5171;
+    margin: 0 auto;
 }
 
 .hover ul li:hover{
