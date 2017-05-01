@@ -1,21 +1,19 @@
 nav ul {
   padding: 0;
   list-style: none; }
-
 nav li {
   padding: 10px;
   margin: 5px;
   border-radius: 5px; }
-
 nav ul li {
   background-color: #4c9cd7; }
-
 nav a {
   color: white;
   display: inline-block;
   padding: 10px 16px;
   text-decoration: none;
   font-family: sans-serif;
+  font-size: 15px;
   margin-bottom: 5px; }
 
 .home {
@@ -36,7 +34,7 @@ nav a {
 h2 {
   color: #004378;
   font-family: sans-serif;
-  font-size: 20px; }
+  font-size: 18px; }
 
 .header {
   background-color: #004378;
@@ -46,6 +44,13 @@ h2 {
   padding-top: 10px;
   padding-left: 0px;
   padding-right: 0px; }
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px; }
 
 ul li img {
   width: 10%;
@@ -100,9 +105,109 @@ ul li img {
 .container {
   width: 90%;
   height: 640px;
-  background-color: #bc5171;
   margin: 0 auto;
   overflow: auto; }
 
+.fa {
+  color: white;
+  font-size: 25px;
+  padding-left: 10px;
+  padding-top: 10px; }
+
+.fa-battery-half {
+  color: white;
+  font-size: 25px;
+  padding-right: 10px;
+  padding-top: 10px;
+  float: right; }
+
+.fa-play-circle {
+  color: white;
+  font-size: 25px;
+  padding-right: 5px;
+  padding-top: 10px;
+  float: right; }
+
 .hover ul li:hover {
   background: #004378; }
+
+input[type=range] {
+  /*removes default webkit styles*/
+  -webkit-appearance: none;
+  /*fix for FF unable to apply focus style bug */
+  border: 1px solid white;
+  /*required for proper track sizing in FF*/
+  width: 300px; }
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 300px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px; }
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: goldenrod;
+  margin-top: -4px; }
+
+input[type=range]:focus {
+  outline: none; }
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #ccc; }
+
+input[type=range]::-moz-range-track {
+  width: 300px;
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px; }
+
+input[type=range]::-moz-range-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: goldenrod; }
+
+/*hide the outline behind the border*/
+input[type=range]:-moz-focusring {
+  outline: 1px solid white;
+  outline-offset: -1px; }
+
+input[type=range]::-ms-track {
+  width: 300px;
+  height: 5px;
+  /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+  background: transparent;
+  /*leave room for the larger thumb to overflow with a transparent border */
+  border-color: transparent;
+  border-width: 6px 0;
+  /*remove default tick marks*/
+  color: transparent; }
+
+input[type=range]::-ms-fill-lower {
+  background: #777;
+  border-radius: 10px; }
+
+input[type=range]::-ms-fill-upper {
+  background: #ddd;
+  border-radius: 10px; }
+
+input[type=range]::-ms-thumb {
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: goldenrod; }
+
+input[type=range]:focus::-ms-fill-lower {
+  background: #888; }
+
+input[type=range]:focus::-ms-fill-upper {
+  background: #ccc; }

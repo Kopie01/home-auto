@@ -5,32 +5,66 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/1c3331eb0f.js"></script>
     <title> Hello</title>
     <link rel= "stylesheet" type="text/css" href="main.css">
+    <style type="text/css">
+        .tester-option.font-size input
+{
+    -webkit-appearance: none !important;
+    background: #cecece;
+    height: 1px;
+    width: 425px;
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#font-1-size::-webkit-slider-thumb
+{
+    -webkit-appearance: none !important;
+    background: #666;
+    height: 10px;
+    width: 10px;
+    cursor: pointer;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+    </style>
 </head>
 
 <body>
-    
+        
+
+
    <div class="header">
         
-        <div class="home">
-        
-        <a href="index.html"> <img src="images/home-button.svg"></a>
-        
+        <div class="header-buttons">
+                <div class="home left">
+                <a href="index.html"> <i class="fa fa-home" aria-hidden="true"></i></a>
+                </div>
+                
+                 <div class="home right">
+                <a href="index.html"> <i class="fa fa-cog" aria-hidden="true"></i></a>
+                </div>
         </div>
-        
     </div>
+
+
    
     <div class="container">
+
+    <h2>Lights</h2>
         
             <nav>
                 
                     <ul>
                         <li><a>Alerts</a></li>
-                        <li><a>Kitchen</a></li>
-                        <li><a>Bedrooms</a></li>
-                        <li><a>Hallway</a></li>
-                        <li><a>Lounge</a></li>
+                        <li><a>Kitchen</a><input type="range"></li>
+                        <li><a>Bedrooms</a><input type="range"></li>
+                        <li><a>Hallway</a><input type="range"></li>
+                        <li><a>Lounge</a><input type="range"></li>
                         
                     </ul>
                 
