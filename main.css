@@ -1,12 +1,15 @@
 nav ul {
   padding: 0;
   list-style: none; }
+
 nav li {
   padding: 10px;
   margin: 5px;
   border-radius: 5px; }
+
 nav ul li {
   background-color: #4c9cd7; }
+
 nav a {
   color: white;
   display: inline-block;
@@ -109,24 +112,27 @@ ul li img {
   overflow: auto; }
 
 .fa {
-  color: white;
-  font-size: 25px;
-  padding-left: 10px;
-  padding-top: 10px; }
+  color: white; }
 
 .fa-battery-half {
-  color: white;
   font-size: 25px;
   padding-right: 10px;
   padding-top: 10px;
   float: right; }
 
 .fa-play-circle {
-  color: white;
   font-size: 25px;
   padding-right: 5px;
   padding-top: 10px;
   float: right; }
+
+.font {
+  font-size: 12px; }
+
+.icon-main-padding {
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 25px; }
 
 .hover ul li:hover {
   background: #004378; }
