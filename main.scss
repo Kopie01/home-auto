@@ -41,6 +41,11 @@ nav{
         
 }
 
+.logo{
+        width:250px;
+        margin: 0 auto;
+}
+
 .home{
     width: 10%;
     padding-left: 5px;
@@ -107,17 +112,21 @@ ul li img {
 
 .pin-tabs{
         padding:20px;
-        //border-color: $primary-color;
-        //border-width: 2px;
-        //border-style: solid;
         border-radius: 5px;
         background-color: #d4d8dd;
         display: inline-block;
 }
-//Moving the button down the page
+
+//positioning of the log in page
+.login-page{
+        position: relative;
+        top: 50px;
+}
+
+//positioning of the log-out page
 .mid-page{
         position: relative;
-        top: 200px;
+        top: 250px;
 }
 
 // css for box at 60% for mobile and portrait tablet layout
