@@ -12,6 +12,21 @@ $width-main:45%;
 
 $width-test:30%;
 
+.range-names{
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            padding: 0;
+            background-color: $secondary-color;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            display: inline-block;
+            
+.display{
+    display: inline-block;
+}
+}
 // General Nav
 nav{
         ul{
@@ -23,6 +38,32 @@ nav{
             padding: 10px;
             margin: 5px;
             border-radius: 5px;
+
+            .lights{
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+
+
+            ul{ background-color: yellow;
+                height: 50px;
+
+
+
+               
+
+
+                li{
+                    display: inline-block;
+                    background-color: red;
+                    margin-right: 30px;
+                    // float:right;
+
+
+                }
+            }
+            display: inline-block;
+}
         }
         
         ul li{
@@ -37,8 +78,12 @@ nav{
             font-family: 'Poppins', sans-serif;
             font-size: 14px;
             margin-bottom: 5px;
+
+
+
         }
         
+
 }
  // Main Logo
 .logo{
@@ -103,18 +148,8 @@ h3{
             padding-right:0px;
 }
 
-input[type=range]::-webkit-slider-runnable-track {
-    width: 300px;
-    height: 5px;
-    background: #ddd;
-    border: none;
-    border-radius: 3px;
-}
-ul li img {
-    
-    width: 10%;
-    float: left;
-}
+
+
 
  // css for general box
 .box{
@@ -209,8 +244,17 @@ ul li img {
     color: white;
 }
 
+.icon-main-padding{
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 25px;
+}
 
-
+.settings-cog{
+        padding-top: 10px;
+        margin-right: 10px;
+        font-size: 25px;
+}
 .fa-battery-half{
     font-size: 25px;
     padding-right: 10px;
@@ -270,30 +314,40 @@ ul li img {
     }
 }
 
+// Lights
+
+
+
+// Range sliders
+
 input[type=range] {
     /*removes default webkit styles
     -webkit-appearance: none;
     
     /*fix for FF unable to apply focus style bug */
-    border: 1px solid white;
+    // border: 1px solid white;
     
     /*required for proper track sizing in FF*/
-    width: 300px;
+    width: 100%;
 }
+
+// This is the track
 input[type=range]::-webkit-slider-runnable-track {
-    width: 300px;
+    width: 100%;
     height: 5px;
     background: #ddd;
     border: none;
     border-radius: 3px;
 }
+
+// This is the slider button?
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
     border: none;
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: goldenrod;
+    background: yellow;
     margin-top: -4px;
 }
 input[type=range]:focus {
@@ -303,24 +357,28 @@ input[type=range]:focus::-webkit-slider-runnable-track {
     background: #ccc;
 }
 
+// For Firefox
+
+// This is the track
 input[type=range]::-moz-range-track {
-    width: 300px;
+    width: 100%;
     height: 5px;
     background: #ddd;
     border: none;
     border-radius: 3px;
 }
+// This is the slider button?
 input[type=range]::-moz-range-thumb {
     border: none;
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: goldenrod;
+    background: white;
 }
 
 /*hide the outline behind the border*/
 input[type=range]:-moz-focusring{
-    outline: 1px solid white;
+    // outline: 1px solid white;
     outline-offset: -1px;
 }
 
@@ -361,6 +419,7 @@ input[type=range]:focus::-ms-fill-upper {
     background: #ccc;
 }
 
+// Toggle swith code
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -426,3 +485,8 @@ input:checked + .slider:before {
         top: 7px;
         right: 5px;
 }
+
+
+
+
+
