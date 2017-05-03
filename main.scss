@@ -12,7 +12,7 @@ $width-main:45%;
 
 $width-test:30%;
 
-
+// General Nav
 nav{
         ul{
              padding: 0;
@@ -40,7 +40,7 @@ nav{
         }
         
 }
-
+ // Main Logo
 .logo{
         width:250px;
         margin: 0 auto;
@@ -51,6 +51,20 @@ nav{
     padding-left: 5px;
     padding-right:5px;
     padding-bottom: 5px;
+}
+
+// User profile pic
+
+.user{
+
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    top: 20px;
+    img{
+        width: 40%;
+        text-align: center;
+    }
 }
 
 .right{
@@ -70,6 +84,13 @@ h2 {
             color: $primary-color;
             font-family: 'Poppins', sans-serif;
             font-size: 18px;
+}
+
+h3{
+            color: $primary-color;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            text-align: center;
 }
 
 .header {
@@ -186,9 +207,8 @@ ul li img {
 // icon styles
 .fa{
     color: white;
-  
-    
 }
+
 
 
 .fa-battery-half{
@@ -235,9 +255,23 @@ ul li img {
 .hover ul li:hover{
     background:$hover-color;
 }
+// Code for edit button
+.edit{
+    background-color: $primary-color;
+    width: 40px;
+    margin: 0 auto ;
+    height: 20px;
+    position: relative;
+    top: 10px;
+    a{
+        position: relative;
+        bottom: 5px;
+        right: 2px;
+    }
+}
 
 input[type=range] {
-    /*removes default webkit styles*/
+    /*removes default webkit styles
     -webkit-appearance: none;
     
     /*fix for FF unable to apply focus style bug */
@@ -318,7 +352,7 @@ input[type=range]::-ms-thumb {
     height: 16px;
     width: 16px;
     border-radius: 50%;
-    background: goldenrod;
+    background: yellow;
 }
 input[type=range]:focus::-ms-fill-lower {
     background: #888;
