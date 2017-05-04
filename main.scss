@@ -99,12 +99,25 @@ nav{
     }
 }
 
+// .hide-mobile{
+//     display:none;
+// }
+
+.none{
+	display: none;
+}
+
+
 .right{
     float: right;
 }
 
 .left{
     float: left;
+}
+
+.left-home{
+	float: left;
 }
 
 .centre{
@@ -117,10 +130,10 @@ nav{
        left:60%;
 }
 
-.2-thirds{
-        position: absolute;
-       left:80%;
-}
+// .2-thirds{
+//         position: absolute;
+//        left:80%;
+// }
 
 .rise{
         position: relative;
@@ -287,8 +300,8 @@ h3{
     float: right;
 }
 
-.fa-plus-circle{
-    
+.square{
+	width:20%;
 }
 
 .centre{
@@ -331,7 +344,17 @@ h3{
     }
 }
 
+// Code for submit button
 
+.submit{
+	background-color: $primary-color;
+   width:20px;
+   padding: 20px;
+   p{
+   	color: white;
+   }
+
+}
 
 
 // Range sliders
@@ -505,7 +528,14 @@ input:checked + .slider:before {
 
 //media query
 
-@media all and (min-width: 750px)
+
+
+@media all and (max-width: 700px){
+	nav li br {
+		display: none;
+	}
+}
+@media all and (min-width: 701px)
 {
         
 .container{
@@ -516,9 +546,10 @@ input:checked + .slider:before {
     overflow: auto;
 }
 
-.mobile{
-        display: none;
+.left{
+	display: none;
 }
+
 
 .tablet{
         text-align: center;
@@ -533,10 +564,12 @@ nav{
             padding: 50px 40px 50px 40px;
             margin: 5px;
             border-radius: 5px;
-            width: 15%;
+            width: 20%;
             display: inline-block;
            
-
+            .nav-line {
+            	display: none;
+            }
             .lights{
             color: white;
             font-family: 'Poppins', sans-serif;
@@ -566,6 +599,11 @@ nav{
         
 
 }
+
+.hide-tablet{
+    display: none;
+}
+
 
 // icon styles
 .fa{
@@ -633,7 +671,8 @@ nav{
         
         position: relative;
         top: 7px;
-        right: 35px;
+        right: 37%;
+        
 }
 
 //Moving the titles down for tablet

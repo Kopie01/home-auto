@@ -1,7 +1,6 @@
 nav ul {
   padding: 0;
   list-style: none; }
-
 nav li {
   padding: 10px;
   margin: 5px;
@@ -18,10 +17,8 @@ nav li {
         display: inline-block;
         background-color: red;
         margin-right: 30px; }
-
 nav ul li {
   background-color: #4c9cd7; }
-
 nav a {
   color: white;
   display: inline-block;
@@ -50,10 +47,16 @@ nav a {
     width: 40%;
     text-align: center; }
 
+.none {
+  display: none; }
+
 .right {
   float: right; }
 
 .left {
+  float: left; }
+
+.left-home {
   float: left; }
 
 .centre {
@@ -63,10 +66,6 @@ nav a {
 .third {
   position: relative;
   left: 60%; }
-
-.2-thirds {
-  position: absolute;
-  left: 80%; }
 
 .rise {
   position: relative;
@@ -191,6 +190,9 @@ h3 {
   padding-top: 10px;
   float: right; }
 
+.square {
+  width: 20%; }
+
 .centre {
   text-align: center; }
 
@@ -224,11 +226,18 @@ h3 {
     bottom: 5px;
     right: 2px; }
 
+.submit {
+  background-color: #004378;
+  width: 20px;
+  padding: 20px; }
+  .submit p {
+    color: white; }
+
 input[type=range] {
   /*removes default webkit styles
-    -webkit-appearance: none;
-    
-    /*fix for FF unable to apply focus style bug */
+  -webkit-appearance: none;
+  
+  /*fix for FF unable to apply focus style bug */
   /*required for proper track sizing in FF*/
   width: 100%; }
 
@@ -362,23 +371,31 @@ input:checked + .slider:before {
   top: 7px;
   right: 5px; }
 
-@media all and (min-width: 750px) {
+@media all and (max-width: 700px) {
+  nav li br {
+    display: none; } }
+@media all and (min-width: 701px) {
   .container {
     width: 100%;
     margin: 0 auto;
     overflow: auto; }
-  .mobile {
+
+  .left {
     display: none; }
+
   .tablet {
     text-align: center; }
+
   nav ul {
     padding: 0; }
   nav li {
     padding: 50px 40px 50px 40px;
     margin: 5px;
     border-radius: 5px;
-    width: 15%;
+    width: 20%;
     display: inline-block; }
+    nav li .nav-line {
+      display: none; }
     nav li .lights {
       color: white;
       font-family: 'Poppins', sans-serif;
@@ -393,49 +410,67 @@ input:checked + .slider:before {
     margin-bottom: 5px;
     padding: 0px;
     text-align: center; }
+
+  .hide-tablet {
+    display: none; }
+
   .fa {
     color: white; }
+
   .icon-main-padding {
     font-size: 25px;
     text-align: center; }
+
   .settings-cog {
     padding-top: 10px;
     margin-right: 10px;
     font-size: 25px; }
+
   .fa-battery-half {
     font-size: 25px;
     padding-right: 10px;
     padding-top: 10px;
     float: right; }
+
   .fa-play-circle {
     font-size: 25px;
     padding-right: 5px;
     padding-top: 10px;
     float: right; }
+
   .centre {
     text-align: center; }
+
   .log-in {
     width: 100px;
     margin: 0 auto; }
+
   .font {
     font-size: 12px; }
+
   .width-2 {
     width: 45%; }
+
   .icon-main-padding {
     padding-left: 10px;
     padding-top: 10px;
     font-size: 30px; }
+
   .hover ul li:hover {
     background: #004378; }
+
   .slider-pos {
     position: relative;
     top: 7px;
-    right: 35px; }
+    right: 37%; }
+
   a {
     position: relative;
     top: 5px; }
+
   .pushed-over {
     position: relative;
     left: 100px; }
+
   .extra-padding {
     padding: 60px 40px 70px 40px; } }
