@@ -1,6 +1,7 @@
 nav ul {
   padding: 0;
   list-style: none; }
+
 nav li {
   padding: 10px;
   margin: 5px;
@@ -17,8 +18,10 @@ nav li {
         display: inline-block;
         background-color: red;
         margin-right: 30px; }
+
 nav ul li {
   background-color: #4c9cd7; }
+
 nav a {
   color: white;
   display: inline-block;
@@ -52,6 +55,19 @@ nav a {
 
 .left {
   float: left; }
+
+.centre {
+  position: absolute;
+  left: 45%; }
+
+.rise {
+  position: relative;
+  bottom: 10px; }
+
+.slider-range {
+  border-radius: 0px 0px 5px 5px;
+  position: relative;
+  bottom: 10px; }
 
 .inline-block {
   display: inline-block; }
@@ -202,9 +218,9 @@ h3 {
 
 input[type=range] {
   /*removes default webkit styles
-  -webkit-appearance: none;
-  
-  /*fix for FF unable to apply focus style bug */
+    -webkit-appearance: none;
+    
+    /*fix for FF unable to apply focus style bug */
   /*required for proper track sizing in FF*/
   width: 100%; }
 
@@ -221,7 +237,7 @@ input[type=range]::-webkit-slider-thumb {
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  background: yellow;
+  background: #004378;
   margin-top: -4px; }
 
 input[type=range]:focus {
@@ -242,7 +258,7 @@ input[type=range]::-moz-range-thumb {
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  background: white; }
+  background: #004378; }
 
 /*hide the outline behind the border*/
 input[type=range]:-moz-focusring {
@@ -272,7 +288,7 @@ input[type=range]::-ms-thumb {
   height: 16px;
   width: 16px;
   border-radius: 50%;
-  background: yellow; }
+  background: #004378; }
 
 input[type=range]:focus::-ms-fill-lower {
   background: #888; }
