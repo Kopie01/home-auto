@@ -546,7 +546,7 @@ nav{
         }
         
         ul li{
-            background-color: red;   
+            background-color: #db1e57;   
         }
         
         a{
@@ -558,6 +558,7 @@ nav{
             font-size: 14px;
             margin-bottom: 5px;
             padding: 0px;
+            text-align: center;
 
 
 
@@ -621,10 +622,33 @@ nav{
 .icon-main-padding{
         padding-left: 10px;
         padding-top: 10px;
-        font-size: 25px;
+        font-size: 30px;
 }
 
 .hover ul li:hover{
     background:$hover-color;
+}
+//tablet toggle position
+.slider-pos{
+        
+        position: relative;
+        top: 7px;
+        right: 35px;
+}
+
+//Moving the titles down for tablet
+
+a {
+        position: relative;
+        top: 5px;
+}
+
+.pushed-over{
+        position: relative;
+        left: 100px;
+}
+
+.extra-padding{
+        padding: 60px 40px 70px 40px;
 }
 }
