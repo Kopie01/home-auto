@@ -168,15 +168,7 @@ h3{
             text-align: center;
 }
 
-.header {
-            background-color: $primary-color;
-            height: 20px;
-            width: 100%;
-            padding-bottom: 40px ;
-            padding-top:10px;
-            padding-left:0px;
-            padding-right:0px;
-}
+
 
 
 
@@ -216,13 +208,8 @@ h3{
 }
 
 // css for box at 60% for mobile and portrait tablet layout
-.width-main{
-            width:$width-main;
-}
 
-.width-test{
-            width: $width-test;
-}
+
 // css for box at 100% for mobile and portrait tablet layout
 .width-40{
             width: 40%;
@@ -238,15 +225,17 @@ h3{
 
 .camera-box1{
     //margin-bottom: 20px;
-    width:40%;
+    width:300px;
     display: inline-block;
-    margin: 20px 5px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    
 }
 .camera-screen1 {
             background-color: gray;
             padding:10px;
             height: 70px;
             border-radius: 5px 5px 0px 0px;
+            height: 150px;
 }
 
 .title-camera-box {
@@ -266,7 +255,7 @@ h3{
     height: 640px;
    //background-color:
     margin: 0 auto;
-    overflow: auto;
+    
 }
 
 // icon styles
@@ -274,31 +263,16 @@ h3{
     color: white;
 }
 
-.icon-main-padding{
-        padding-left: 10px;
-        padding-top: 10px;
-        font-size: 25px;
-}
+
 
 .settings-cog{
         padding-top: 10px;
         margin-right: 10px;
         font-size: 25px;
 }
-.fa-battery-half{
-    font-size: 25px;
-    padding-right: 10px;
-    padding-top: 10px;
-    float: right;
-}
 
-.fa-play-circle {
-    
-    font-size: 25px;
-    padding-right: 5px;
-    padding-top: 10px;
-    float: right;
-}
+
+
 
 .square{
 	width:20%;
@@ -320,11 +294,7 @@ h3{
         width: 45%;
 }
 
-.icon-main-padding{
-        padding-left: 10px;
-        padding-top: 10px;
-        font-size: 25px;
-}
+
 
 .hover ul li:hover{
     background:$hover-color;
@@ -526,15 +496,66 @@ input:checked + .slider:before {
 }
 
 
-//media query
 
 
+
+
+
+//media query only for mobile size and portrait tablet
 
 @media all and (max-width: 700px){
 	nav li br {
 		display: none;
 	}
+        
+ .header {
+            background-color: $primary-color;
+            height: 20px;
+            width: 100%;
+            padding-bottom: 40px ;
+            padding-top:10px;
+            padding-left:0px;
+            padding-right:0px;
 }
+
+        .icon-main-padding{
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 25px;
+}
+
+
+
+        .fa-battery-half{
+    font-size: 25px;
+    padding-right: 10px;
+    padding-top: 10px;
+    float: right;
+}
+
+.fa-play-circle {
+    
+    font-size: 25px;
+    padding-right: 5px;
+    padding-top: 10px;
+    float: right;
+}
+
+//For battery block in smoke alarms
+.width-main{
+            width:$width-main;
+}
+
+//For test block in smoke alarms
+.width-test{
+            width: $width-test;
+}
+
+}
+
+
+//media query only for tablet landscape
+
 @media all and (min-width: 701px)
 {
         
@@ -543,16 +564,47 @@ input:checked + .slider:before {
     //height: 640px;
    //background-color:
     margin: 0 auto;
-    overflow: auto;
+    //background-color: green;
+    
+}
+
+ .header {
+            background-color: $primary-color;
+            height: 1000px;
+            width: 7%;
+            float: left;
+            margin-right: 1%;
+}
+
+//For battery block in smoke alarms
+.width-main{
+            width:30%;
+}
+
+//For test block in smoke alarms
+.width-test{
+            width: 20%;
 }
 
 .left{
 	display: none;
 }
 
+//To position the alerts bar to the left in appliances
+.position-left{
+        position: relative;
+        right: 126px;
+}
 
 .tablet{
         text-align: center;
+        
+
+}
+
+.box-padding {
+        padding-top: 65px;
+        padding-bottom: 65px;
 }
 nav{
         ul{
@@ -571,7 +623,7 @@ nav{
             	display: none;
             }
             .lights{
-            color: white;
+            color: red;
             font-family: 'Poppins', sans-serif;
             font-size: 12px;
             //display: inline-block;
@@ -579,7 +631,7 @@ nav{
         }
         
         ul li{
-            background-color: #db1e57;   
+            background-color: red;   
         }
         
         a{
@@ -611,10 +663,16 @@ nav{
     
 }
 
+//icon positioning for tablet
 .icon-main-padding{
       
-        font-size: 25px;
-        text-align: center;
+        
+        position: relative;
+        right:5px;
+         padding-left: 10px;
+        padding-top: 10px;
+        font-size: 30px;
+        
 }
 
 .settings-cog{
@@ -624,17 +682,15 @@ nav{
 }
 .fa-battery-half{
     font-size: 25px;
-    padding-right: 10px;
-    padding-top: 10px;
-    float: right;
+   
+    
 }
 
 .fa-play-circle {
     
     font-size: 25px;
-    padding-right: 5px;
-    padding-top: 10px;
-    float: right;
+   
+    
 }
 
 .fa-plus-circle{
@@ -657,11 +713,6 @@ nav{
         width: 45%;
 }
 
-.icon-main-padding{
-        padding-left: 10px;
-        padding-top: 10px;
-        font-size: 30px;
-}
 
 .hover ul li:hover{
     background:$hover-color;
@@ -675,19 +726,5 @@ nav{
         
 }
 
-//Moving the titles down for tablet
 
-a {
-        position: relative;
-        top: 5px;
-}
-
-.pushed-over{
-        position: relative;
-        left: 100px;
-}
-
-.extra-padding{
-        padding: 60px 40px 70px 40px;
-}
 }
