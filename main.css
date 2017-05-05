@@ -1,6 +1,7 @@
 nav ul {
   padding: 0;
   list-style: none; }
+
 nav li {
   padding: 10px;
   margin: 5px;
@@ -17,8 +18,10 @@ nav li {
         display: inline-block;
         background-color: red;
         margin-right: 30px; }
+
 nav ul li {
   background-color: #4c9cd7; }
+
 nav a {
   color: white;
   display: inline-block;
@@ -123,12 +126,6 @@ h3 {
   position: relative;
   top: 250px; }
 
-.width-main {
-  width: 45%; }
-
-.width-test {
-  width: 30%; }
-
 .width-40 {
   width: 40%; }
 
@@ -162,8 +159,7 @@ h3 {
 .container {
   width: 90%;
   height: 640px;
-  margin: 0 auto;
-  overflow: auto; }
+  margin: 0 auto; }
 
 .fa {
   color: white; }
@@ -177,18 +173,6 @@ h3 {
   padding-top: 10px;
   margin-right: 10px;
   font-size: 25px; }
-
-.fa-battery-half {
-  font-size: 25px;
-  padding-right: 10px;
-  padding-top: 10px;
-  float: right; }
-
-.fa-play-circle {
-  font-size: 25px;
-  padding-right: 5px;
-  padding-top: 10px;
-  float: right; }
 
 .square {
   width: 20%; }
@@ -235,9 +219,9 @@ h3 {
 
 input[type=range] {
   /*removes default webkit styles
-  -webkit-appearance: none;
-  
-  /*fix for FF unable to apply focus style bug */
+    -webkit-appearance: none;
+    
+    /*fix for FF unable to apply focus style bug */
   /*required for proper track sizing in FF*/
   width: 100%; }
 
@@ -373,19 +357,37 @@ input:checked + .slider:before {
 
 @media all and (max-width: 700px) {
   nav li br {
-    display: none; } }
+    display: none; }
+  .fa-battery-half {
+    font-size: 25px;
+    padding-right: 10px;
+    padding-top: 10px;
+    float: right; }
+  .fa-play-circle {
+    font-size: 25px;
+    padding-right: 5px;
+    padding-top: 10px;
+    float: right; }
+  .width-main {
+    width: 45%; }
+  .width-test {
+    width: 30%; } }
+
 @media all and (min-width: 701px) {
   .container {
     width: 100%;
-    margin: 0 auto;
-    overflow: auto; }
-
+    margin: 0 auto; }
+  .width-main {
+    width: 30%; }
+  .width-test {
+    width: 20%; }
   .left {
     display: none; }
-
+  .position-left {
+    position: relative;
+    right: 126px; }
   .tablet {
     text-align: center; }
-
   nav ul {
     padding: 0; }
   nav li {
@@ -410,67 +412,45 @@ input:checked + .slider:before {
     margin-bottom: 5px;
     padding: 0px;
     text-align: center; }
-
   .hide-tablet {
     display: none; }
-
   .fa {
     color: white; }
-
   .icon-main-padding {
     font-size: 25px;
     text-align: center; }
-
   .settings-cog {
     padding-top: 10px;
     margin-right: 10px;
     font-size: 25px; }
-
   .fa-battery-half {
-    font-size: 25px;
-    padding-right: 10px;
-    padding-top: 10px;
-    float: right; }
-
+    font-size: 25px; }
   .fa-play-circle {
-    font-size: 25px;
-    padding-right: 5px;
-    padding-top: 10px;
-    float: right; }
-
+    font-size: 25px; }
   .centre {
     text-align: center; }
-
   .log-in {
     width: 100px;
     margin: 0 auto; }
-
   .font {
     font-size: 12px; }
-
   .width-2 {
     width: 45%; }
-
   .icon-main-padding {
     padding-left: 10px;
     padding-top: 10px;
     font-size: 30px; }
-
   .hover ul li:hover {
     background: #004378; }
-
   .slider-pos {
     position: relative;
     top: 7px;
     right: 37%; }
-
   a {
     position: relative;
     top: 5px; }
-
   .pushed-over {
     position: relative;
     left: 100px; }
-
   .extra-padding {
-    padding: 60px 40px 70px 40px; } }
+    padding: 15px 0px 15px 0px; } }
