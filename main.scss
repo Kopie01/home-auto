@@ -269,11 +269,7 @@ h3{
     color: white;
 }
 
-.icon-main-padding{
-        padding-left: 10px;
-        padding-top: 10px;
-        font-size: 25px;
-}
+
 
 .settings-cog{
         padding-top: 10px;
@@ -304,11 +300,7 @@ h3{
         width: 45%;
 }
 
-.icon-main-padding{
-        padding-left: 10px;
-        padding-top: 10px;
-        font-size: 25px;
-}
+
 
 .hover ul li:hover{
     background:$hover-color;
@@ -522,6 +514,15 @@ input:checked + .slider:before {
 		display: none;
 	}
         
+        
+        .icon-main-padding{
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 25px;
+}
+
+
+
         .fa-battery-half{
     font-size: 25px;
     padding-right: 10px;
@@ -644,10 +645,16 @@ nav{
     
 }
 
+//icon positioning for tablet
 .icon-main-padding{
       
-        font-size: 25px;
-        text-align: center;
+        
+        position: relative;
+        right:5px;
+         padding-left: 10px;
+        padding-top: 10px;
+        font-size: 30px;
+        
 }
 
 .settings-cog{
@@ -688,11 +695,6 @@ nav{
         width: 45%;
 }
 
-.icon-main-padding{
-        padding-left: 10px;
-        padding-top: 10px;
-        font-size: 30px;
-}
 
 .hover ul li:hover{
     background:$hover-color;
@@ -706,19 +708,5 @@ nav{
         
 }
 
-//Moving the titles down for tablet
 
-a {
-        position: relative;
-        top: 5px;
-}
-
-.pushed-over{
-        position: relative;
-        left: 100px;
-}
-
-.extra-padding{
-        padding: 15px 0px 15px 0px;
-}
 }

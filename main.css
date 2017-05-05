@@ -164,11 +164,6 @@ h3 {
 .fa {
   color: white; }
 
-.icon-main-padding {
-  padding-left: 10px;
-  padding-top: 10px;
-  font-size: 25px; }
-
 .settings-cog {
   padding-top: 10px;
   margin-right: 10px;
@@ -189,11 +184,6 @@ h3 {
 
 .width-2 {
   width: 45%; }
-
-.icon-main-padding {
-  padding-left: 10px;
-  padding-top: 10px;
-  font-size: 25px; }
 
 .hover ul li:hover {
   background: #004378; }
@@ -358,6 +348,10 @@ input:checked + .slider:before {
 @media all and (max-width: 700px) {
   nav li br {
     display: none; }
+  .icon-main-padding {
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 25px; }
   .fa-battery-half {
     font-size: 25px;
     padding-right: 10px;
@@ -417,8 +411,11 @@ input:checked + .slider:before {
   .fa {
     color: white; }
   .icon-main-padding {
-    font-size: 25px;
-    text-align: center; }
+    position: relative;
+    right: 5px;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 30px; }
   .settings-cog {
     padding-top: 10px;
     margin-right: 10px;
@@ -436,21 +433,9 @@ input:checked + .slider:before {
     font-size: 12px; }
   .width-2 {
     width: 45%; }
-  .icon-main-padding {
-    padding-left: 10px;
-    padding-top: 10px;
-    font-size: 30px; }
   .hover ul li:hover {
     background: #004378; }
   .slider-pos {
     position: relative;
     top: 7px;
-    right: 37%; }
-  a {
-    position: relative;
-    top: 5px; }
-  .pushed-over {
-    position: relative;
-    left: 100px; }
-  .extra-padding {
-    padding: 15px 0px 15px 0px; } }
+    right: 37%; } }
