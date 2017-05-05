@@ -93,15 +93,6 @@ h3 {
   font-size: 18px;
   text-align: center; }
 
-.header {
-  background-color: #004378;
-  height: 20px;
-  width: 100%;
-  padding-bottom: 40px;
-  padding-top: 10px;
-  padding-left: 0px;
-  padding-right: 0px; }
-
 .box {
   color: white;
   background-color: #4c9cd7;
@@ -136,15 +127,16 @@ h3 {
   display: block; }
 
 .camera-box1 {
-  width: 40%;
+  width: 300px;
   display: inline-block;
-  margin: 20px 5px 5px 5px; }
+  margin: 5px 5px 5px 5px; }
 
 .camera-screen1 {
   background-color: gray;
   padding: 10px;
   height: 70px;
-  border-radius: 5px 5px 0px 0px; }
+  border-radius: 5px 5px 0px 0px;
+  height: 150px; }
 
 .title-camera-box {
   background-color: #4c9cd7;
@@ -348,6 +340,14 @@ input:checked + .slider:before {
 @media all and (max-width: 700px) {
   nav li br {
     display: none; }
+  .header {
+    background-color: #004378;
+    height: 20px;
+    width: 100%;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-left: 0px;
+    padding-right: 0px; }
   .icon-main-padding {
     padding-left: 10px;
     padding-top: 10px;
@@ -371,6 +371,12 @@ input:checked + .slider:before {
   .container {
     width: 100%;
     margin: 0 auto; }
+  .header {
+    background-color: #004378;
+    height: 1000px;
+    width: 7%;
+    float: left;
+    margin-right: 1%; }
   .width-main {
     width: 30%; }
   .width-test {
@@ -382,6 +388,9 @@ input:checked + .slider:before {
     right: 126px; }
   .tablet {
     text-align: center; }
+  .box-padding {
+    padding-top: 65px;
+    padding-bottom: 65px; }
   nav ul {
     padding: 0; }
   nav li {
@@ -393,11 +402,11 @@ input:checked + .slider:before {
     nav li .nav-line {
       display: none; }
     nav li .lights {
-      color: white;
+      color: red;
       font-family: 'Poppins', sans-serif;
       font-size: 12px; }
   nav ul li {
-    background-color: #db1e57; }
+    background-color: red; }
   nav a {
     color: white;
     text-decoration: none;
