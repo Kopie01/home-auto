@@ -72,6 +72,17 @@ nav{
         
 
 }
+
+ .header {
+            background-color: $primary-color;
+            height: 20px;
+            width: 100%;
+            padding-bottom: 40px ;
+            padding-top:10px;
+            padding-left:0px;
+            padding-right:0px;
+}
+
  // Main Logo
 .logo{
         width:250px;
@@ -480,12 +491,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-.slider-pos{
-        float:right;
-        position: relative;
-        top: 7px;
-        right: 5px;
-}
+
 
 
 
@@ -500,15 +506,7 @@ input:checked + .slider:before {
 		display: none;
 	}
         
- .header {
-            background-color: $primary-color;
-            height: 20px;
-            width: 100%;
-            padding-bottom: 40px ;
-            padding-top:10px;
-            padding-left:0px;
-            padding-right:0px;
-}
+
 
         .icon-main-padding{
         padding-left: 10px;
@@ -560,27 +558,27 @@ input:checked + .slider:before {
     display: none;
 }
 
+.slider-pos{
+        float:right;
+        position: relative;
+        top: 7px;
+        right: 5px;
+}
 //media query only for tablet landscape
 
 @media all and (min-width: 701px)
 {
         
 .container{
-    width: 100%;
-    //height: 640px;
-   //background-color:
-    margin: 0 auto;
-    //background-color: green;
+   //  width: 100%;
+   //  //height: 640px;
+   // //background-color:
+   //  margin: 0 auto;
+   //  //background-color: green;
     
 }
 
- .header {
-            background-color: $primary-color;
-            height: 1000px;
-            width: 7%;
-            float: left;
-            margin-right: 1%;
-}
+
 
 //For battery block in smoke alarms
 .width-main{
@@ -637,7 +635,7 @@ nav{
         }
         
         ul li{
-            background-color: red;   
+            background-color: $secondary-color;   
         }
         
         a{
@@ -725,10 +723,9 @@ nav{
 }
 //tablet toggle position
 .slider-pos{
-        
         position: relative;
-        top: 7px;
-        right: 37%;
+        right: 35%;
+        
         
 }
 
@@ -739,7 +736,7 @@ nav{
         
         //background-color: $primary-color;
         border-radius: 5px 5px 5px 5px;
-        width: 40%;
+        width: 50%;
         
 }
 
@@ -754,12 +751,12 @@ nav{
 }
 
 .temp-padding{
-    padding:80px 40px 80px 40px;
-    margin-bottom: 2px;
+    padding:65px 40px 65px 40px;
+    text-align: center;
 }
 
 .temp-range{
-    padding-bottom: 90px;
+    padding: 37px 30px 101px 30px;
 
 }
 
@@ -767,5 +764,9 @@ nav{
     position: relative;
     top: 40px;
 }
+
+// .slider-pos-temp-lights{
+//     position: block;
+// }
 
 }
