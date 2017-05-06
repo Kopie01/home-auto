@@ -83,6 +83,74 @@ nav{
             padding-right:0px;
 }
 
+// Contact page code
+
+h4{
+    color: $primary-color;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    
+
+}
+.contact-icon{
+    background-color: $secondary-color;
+    padding:10px 0px 10px 10px;
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: $text-color;
+    font-size: 30px;
+
+}
+
+.fa-phone{
+    position: relative;
+    left: 10px;
+}
+
+.fa-envelope{
+    position: relative;
+    left: 7px;
+}
+
+.contact-margins{
+    // margin: 20px 5px 40px 0px;
+}
+
+.query-box{
+    // background-color: $secondary-color;
+    // padding:10px;
+    width: 95%;
+    margin-top: 40px;
+    border-radius: 5px;
+    height: 270px;
+
+}
+
+.extra-padding{
+    padding: 0px 200px 150px 0px;
+    position: relative;
+    bottom: 30px;
+    width: 37%;
+    border-radius: 5px;
+    border-width: 5px;
+    border-color: $secondary-color;
+
+    
+}
+
+.submit-question{
+    background-color: $primary-color;
+    border-radius: 5px;
+    color: $text-color;
+    font-size: 15px;
+    border-color: $primary-color;
+    padding: 10px;
+}
+// End of contact page code
  // Main Logo
 .logo{
         width:250px;
@@ -147,72 +215,7 @@ nav{
         bottom: 10px;
 }
 
-// Contact page code
 
-h4{
-    color: $primary-color;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    
-
-}
-.contact-icon{
-    background-color: $secondary-color;
-    padding:20px;
-    width: 50px;
-    float: left;
-    margin-right: 10px;
-    border-radius: 5px;
-    color: $text-color;
-    font-size: 40px;
-
-}
-
-.fa-phone{
-    position: relative;
-    left: 10px;
-}
-
-.fa-envelope{
-    position: relative;
-    left: 7px;
-}
-
-.contact-margins{
-    // margin: 20px 5px 40px 0px;
-}
-
-.query-box{
-    background-color: $secondary-color;
-    padding:10px;
-    width: 95%;
-    margin-top: 60px;
-    border-radius: 5px;
-    height: 270px;
-
-}
-
-.query-box-writing{
-    background-color: white;
-    width: 98%;
-    border-radius: 5px;
-    height: 300px;
-    text-align: center;
-    margin: 0 auto;
-
-}
-
-.extra-padding{
-    padding: 0px 200px 150px 0px;
-    position: relative;
-    bottom: 30px;
-    width: 37%;
-
-    
-}
-// End of contact page code
 
 
 .inline-block{
@@ -594,6 +597,8 @@ input:checked + .slider:before {
     padding-top: 10px;
     float: right;
 }
+
+
 
 //For battery block in smoke alarms
 .width-main{
