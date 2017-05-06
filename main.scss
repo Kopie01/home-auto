@@ -140,15 +140,7 @@ nav{
         bottom: 10px;
 }
 
-.slider-range{
-        
-        //background-color: $primary-color;
-        border-radius: 0px 0px 5px 5px;
-        position: relative;
-        bottom: 10px;
-        
-   
-}
+
 
 
 .inline-block{
@@ -553,6 +545,20 @@ input:checked + .slider:before {
 
 }
 
+// temperature and lighting range details
+.slider-range{
+        
+        //background-color: $primary-color;
+        border-radius: 0px 0px 5px 5px;
+        position: relative;
+        bottom: 10px;
+        
+   
+}
+
+.slider-range-tablet-over{
+    display: none;
+}
 
 //media query only for tablet landscape
 
@@ -726,5 +732,40 @@ nav{
         
 }
 
+
+// temperature and lighting range details
+
+.slider-range{
+        
+        //background-color: $primary-color;
+        border-radius: 5px 5px 5px 5px;
+        width: 40%;
+        
+}
+
+.slider-range-tablet{
+    display: none;
+}
+
+.slider-range-tablet-over{
+    display: block;
+    position: relative;
+    top: 15px;
+}
+
+.temp-padding{
+    padding:80px 40px 80px 40px;
+    margin-bottom: 2px;
+}
+
+.temp-range{
+    padding-bottom: 90px;
+
+}
+
+.numbers{
+    position: relative;
+    top: 40px;
+}
 
 }

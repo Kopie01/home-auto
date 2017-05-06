@@ -1,7 +1,6 @@
 nav ul {
   padding: 0;
   list-style: none; }
-
 nav li {
   padding: 10px;
   margin: 5px;
@@ -18,10 +17,8 @@ nav li {
         display: inline-block;
         background-color: red;
         margin-right: 30px; }
-
 nav ul li {
   background-color: #4c9cd7; }
-
 nav a {
   color: white;
   display: inline-block;
@@ -71,11 +68,6 @@ nav a {
   left: 60%; }
 
 .rise {
-  position: relative;
-  bottom: 10px; }
-
-.slider-range {
-  border-radius: 0px 0px 5px 5px;
   position: relative;
   bottom: 10px; }
 
@@ -201,9 +193,9 @@ h3 {
 
 input[type=range] {
   /*removes default webkit styles
-    -webkit-appearance: none;
-    
-    /*fix for FF unable to apply focus style bug */
+  -webkit-appearance: none;
+  
+  /*fix for FF unable to apply focus style bug */
   /*required for proper track sizing in FF*/
   width: 100%; }
 
@@ -340,6 +332,7 @@ input:checked + .slider:before {
 @media all and (max-width: 700px) {
   nav li br {
     display: none; }
+
   .header {
     background-color: #004378;
     height: 20px;
@@ -348,49 +341,69 @@ input:checked + .slider:before {
     padding-top: 10px;
     padding-left: 0px;
     padding-right: 0px; }
+
   .icon-main-padding {
     padding-left: 10px;
     padding-top: 10px;
     font-size: 25px; }
+
   .fa-battery-half {
     font-size: 25px;
     padding-right: 10px;
     padding-top: 10px;
     float: right; }
+
   .fa-play-circle {
     font-size: 25px;
     padding-right: 5px;
     padding-top: 10px;
     float: right; }
+
   .width-main {
     width: 45%; }
+
   .width-test {
     width: 30%; } }
+.slider-range {
+  border-radius: 0px 0px 5px 5px;
+  position: relative;
+  bottom: 10px; }
+
+.slider-range-tablet-over {
+  display: none; }
 
 @media all and (min-width: 701px) {
   .container {
     width: 100%;
     margin: 0 auto; }
+
   .header {
     background-color: #004378;
     height: 1000px;
     width: 7%;
     float: left;
     margin-right: 1%; }
+
   .width-main {
     width: 30%; }
+
   .width-test {
     width: 20%; }
+
   .left {
     display: none; }
+
   .position-left {
     position: relative;
     right: 126px; }
+
   .tablet {
     text-align: center; }
+
   .box-padding {
     padding-top: 65px;
     padding-bottom: 65px; }
+
   nav ul {
     padding: 0; }
   nav li {
@@ -415,36 +428,71 @@ input:checked + .slider:before {
     margin-bottom: 5px;
     padding: 0px;
     text-align: center; }
+
   .hide-tablet {
     display: none; }
+
   .fa {
     color: white; }
+
   .icon-main-padding {
     position: relative;
     right: 5px;
     padding-left: 10px;
     padding-top: 10px;
     font-size: 30px; }
+
   .settings-cog {
     padding-top: 10px;
     margin-right: 10px;
     font-size: 25px; }
+
   .fa-battery-half {
     font-size: 25px; }
+
   .fa-play-circle {
     font-size: 25px; }
+
   .centre {
     text-align: center; }
+
   .log-in {
     width: 100px;
     margin: 0 auto; }
+
   .font {
     font-size: 12px; }
+
   .width-2 {
     width: 45%; }
+
   .hover ul li:hover {
     background: #004378; }
+
   .slider-pos {
     position: relative;
     top: 7px;
-    right: 37%; } }
+    right: 37%; }
+
+  .slider-range {
+    border-radius: 5px 5px 5px 5px;
+    width: 40%; }
+
+  .slider-range-tablet {
+    display: none; }
+
+  .slider-range-tablet-over {
+    display: block;
+    position: relative;
+    top: 15px; }
+
+  .temp-padding {
+    padding: 80px 40px 80px 40px;
+    margin-bottom: 2px; }
+
+  .temp-range {
+    padding-bottom: 90px; }
+
+  .numbers {
+    position: relative;
+    top: 40px; } }
