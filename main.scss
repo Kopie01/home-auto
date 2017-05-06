@@ -141,17 +141,78 @@ nav{
        left:60%;
 }
 
-// .2-thirds{
-//         position: absolute;
-//        left:80%;
-// }
 
 .rise{
         position: relative;
         bottom: 10px;
 }
 
+// Contact page code
 
+h4{
+    color: $primary-color;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    
+
+}
+.contact-icon{
+    background-color: $secondary-color;
+    padding:20px;
+    width: 50px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 5px;
+    color: $text-color;
+    font-size: 40px;
+
+}
+
+.fa-phone{
+    position: relative;
+    left: 10px;
+}
+
+.fa-envelope{
+    position: relative;
+    left: 7px;
+}
+
+.contact-margins{
+    // margin: 20px 5px 40px 0px;
+}
+
+.query-box{
+    background-color: $secondary-color;
+    padding:10px;
+    width: 95%;
+    margin-top: 60px;
+    border-radius: 5px;
+    height: 270px;
+
+}
+
+.query-box-writing{
+    background-color: white;
+    width: 98%;
+    border-radius: 5px;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+.extra-padding{
+    padding: 0px 200px 150px 0px;
+    position: relative;
+    bottom: 30px;
+    width: 37%;
+
+    
+}
+// End of contact page code
 
 
 .inline-block{
