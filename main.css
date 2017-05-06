@@ -104,6 +104,9 @@ h3 {
   border-radius: 10px;
   margin: 5px 5px 5px 5px; }
 
+.pin {
+  text-align: center; }
+
 .pin-tabs {
   padding: 20px;
   border-radius: 5px;
@@ -483,4 +486,7 @@ input:checked + .slider:before {
 
   .numbers {
     position: relative;
-    top: 40px; } }
+    top: 40px; }
+
+  .log-in {
+    padding: 20px; } }

@@ -191,6 +191,9 @@ h3{
 
 //The pin tabs for log in
 
+.pin{
+    text-align: center;
+}
 .pin-tabs{
         padding:20px;
         border-radius: 5px;
@@ -765,8 +768,8 @@ nav{
     top: 40px;
 }
 
-// .slider-pos-temp-lights{
-//     position: block;
-// }
-
+// Login button on tablet
+.log-in{
+    padding: 20px;
+}
 }
