@@ -17,8 +17,7 @@ nav li {
   nav li .lights {
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    display: inline-block; }
+    font-size: 12px; }
     nav li .lights ul {
       background-color: yellow;
       height: 50px; }
@@ -239,9 +238,6 @@ div img {
 .font {
   font-size: 12px; }
 
-.width-2 {
-  width: 45%; }
-
 .hover ul li:hover {
   background: #004378; }
 
@@ -398,6 +394,9 @@ input:checked + .slider:before {
   border-radius: 50%; }
 
 @media all and (max-width: 700px) {
+  .width-2 {
+    width: 45%; }
+
   .hide-mobile {
     display: none; }
 
@@ -449,6 +448,20 @@ input:checked + .slider:before {
   right: 5px; }
 
 @media all and (min-width: 701px) {
+  .fa-minus-circle {
+    font-size: 20px; }
+
+  .fa-plus-circle {
+    font-size: 20px; }
+
+  .width-2 {
+    width: 20%;
+    text-align: center; }
+
+  .width-3 {
+    width: 7%;
+    text-align: center; }
+
   .hide-mobile {
     display: block; }
 
@@ -541,9 +554,6 @@ input:checked + .slider:before {
 
   .font {
     font-size: 12px; }
-
-  .width-2 {
-    width: 45%; }
 
   .hover ul li:hover {
     background: #004378; }
