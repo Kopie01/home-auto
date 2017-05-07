@@ -14,7 +14,18 @@ $width-test:30%;
 
 
 // General Nav
-// General Nav
+     
+
+     .header {
+            background-color: $primary-color;
+            height: 20px;
+            width: 100%;
+            padding-bottom: 40px ;
+            padding-top:10px;
+            padding-left:0px;
+            padding-right:0px;
+}
+
 nav{
         ul{
              padding: 0;
@@ -73,15 +84,7 @@ nav{
 
 }
 
- .header {
-            background-color: $primary-color;
-            height: 20px;
-            width: 100%;
-            padding-bottom: 40px ;
-            padding-top:10px;
-            padding-left:0px;
-            padding-right:0px;
-}
+
 
 // Contact page code
 
@@ -157,12 +160,12 @@ h4{
         margin: 0 auto;
 }
 
-.home{
-    width: 10%;
-    padding-left: 5px;
-    padding-right:5px;
-    padding-bottom: 5px;
-}
+// .home{
+//     width: 10%;
+//     padding-left: 5px;
+//     padding-right:5px;
+//     padding-bottom: 5px;
+// }
 
 // User profile pic
 
@@ -191,13 +194,12 @@ h4{
     float: right;
 }
 
+
 .left{
     float: left;
 }
 
-.left-home{
-	float: left;
-}
+
 
 .centre{
        position: absolute;
@@ -234,6 +236,8 @@ h3{
             font-size: 18px;
             text-align: center;
 }
+
+
 
 
 
@@ -301,6 +305,8 @@ h3{
     margin: 5px 5px 5px 5px;
     
 }
+
+
 .camera-screen1 {
             background-color: $primary-color;
             padding:10px 10px 0px 10px;
@@ -316,11 +322,36 @@ h3{
             padding: 10px;
             border-radius: 0px 0px 5px 5px;
 }
+.camera-box-big{
+    width:90%;
+    display: inline-block;
+    margin: 5px 5px 5px 5px;
+}
+.camera-screen1-big {
+            background-color: $primary-color;
+            padding:10px 10px 0px 10px;
+            border-radius: 5px 5px 0px 0px;
+
+          }
 
 div img {
     width: 100%;
 
 }
+.move-up-buttons{
+    position: relative;
+    bottom: 20px;
+
+}
+
+.margin-left-button{
+    margin-left: 20px;
+}
+
+.font-title-camera{
+    font-family: 'Poppins', sans-serif;
+}
+
 // End of code for camera pages
 .margin-right {
     margin-right: 10px;
@@ -575,7 +606,10 @@ input:checked + .slider:before {
 //media query only for mobile size and portrait tablet
 
 @media all and (max-width: 700px){
-	nav li br {
+	
+
+
+    nav li br {
 		display: none;
 	}
         
@@ -595,7 +629,19 @@ input:checked + .slider:before {
     padding-top: 10px;
     float: right;
 }
+// header icons for mobile
+.left-home{
+    float: left;
+    margin-left: 10px;
 
+}
+
+.right-home{
+    float:right;
+    margin-right: 10px;
+}
+
+// End of header icons for mobile
 .fa-play-circle {
     
     font-size: 25px;
@@ -653,7 +699,18 @@ input:checked + .slider:before {
     
 }
 
+// header icons for tablet
+.left-home{
+    float: left;
+    margin-left: 20px;
+}
 
+.right-home{
+    float:right;
+    margin-right: 20px;
+}
+
+// End of header icons for mobile
 
 //For battery block in smoke alarms
 .width-main{
