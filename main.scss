@@ -14,66 +14,9 @@ $width-test:30%;
 
 
 // General Nav
-// General Nav
-nav{
-        ul{
-             padding: 0;
-             list-style: none;
-        }
-        
-        li{
-            padding: 10px;
-            margin: 5px;
-            border-radius: 5px;
+     
 
-            .lights{
-            color: white;
-            font-family: 'Poppins', sans-serif;
-            font-size: 12px;
-
-
-            ul{ background-color: yellow;
-                height: 50px;
-
-
-
-               
-
-
-                li{
-                    display: inline-block;
-                    background-color: red;
-                    margin-right: 30px;
-                    // float:right;
-
-
-                }
-            }
-            display: inline-block;
-}
-        }
-        
-        ul li{
-            background-color: $secondary-color;   
-        }
-        
-        a{
-            color: $text-color;
-            display:inline-block;
-            padding: 5px 10px;
-            text-decoration: none;
-            font-family: 'Poppins', sans-serif;
-            font-size: 14px;
-            margin-bottom: 5px;
-
-
-
-        }
-        
-
-}
-
- .header {
+     .header {
             background-color: $primary-color;
             height: 20px;
             width: 100%;
@@ -82,6 +25,70 @@ nav{
             padding-left:0px;
             padding-right:0px;
 }
+
+nav{
+        ul{
+             padding: 0;
+             list-style: none;
+            }
+        
+        li{
+                padding: 10px;
+                margin: 5px;
+                border-radius: 5px;
+
+                .lights{
+                color: white;
+                font-family: 'Poppins', sans-serif;
+                font-size: 12px;
+
+
+                ul{ background-color: yellow;
+                    height: 50px;
+
+                        li{
+                            display: inline-block;
+                            background-color: red;
+                            margin-right: 30px;
+                            }
+                    }   
+            }
+        }
+        
+                ul li{
+                    background-color: $secondary-color;   
+                }
+        
+                a{
+                    color: $text-color;
+                    display:inline-block;
+                    padding: 5px 10px;
+                    text-decoration: none;
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+
+                }
+        
+
+    }
+
+
+// Device added code
+
+.website-button{
+    text-align: center;
+    width:60%;
+    padding: 20px;
+    background-color: $primary-color;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    margin: 0 auto;
+            a{text-decoration: none;
+                color: $text-color;
+               }
+}
+
 
 // Contact page code
 
@@ -157,12 +164,12 @@ h4{
         margin: 0 auto;
 }
 
-.home{
-    width: 10%;
-    padding-left: 5px;
-    padding-right:5px;
-    padding-bottom: 5px;
-}
+// .home{
+//     width: 10%;
+//     padding-left: 5px;
+//     padding-right:5px;
+//     padding-bottom: 5px;
+// }
 
 // User profile pic
 
@@ -191,13 +198,12 @@ h4{
     float: right;
 }
 
+
 .left{
     float: left;
 }
 
-.left-home{
-	float: left;
-}
+
 
 .centre{
        position: absolute;
@@ -234,10 +240,6 @@ h3{
             font-size: 18px;
             text-align: center;
 }
-
-
-
-
 
 
  // css for general box
@@ -293,6 +295,7 @@ h3{
     display: block;
 }
 
+// Code for camera pages
 .camera-box1{
     //margin-bottom: 20px;
     width:300px;
@@ -300,22 +303,54 @@ h3{
     margin: 5px 5px 5px 5px;
     
 }
+
+
 .camera-screen1 {
-            background-color: gray;
-            padding:10px;
-            height: 70px;
+            background-color: $primary-color;
+            padding:10px 10px 0px 10px;
             border-radius: 5px 5px 0px 0px;
             height: 150px;
-}
+
+          }
 
 .title-camera-box {
-            background-color: $secondary-color;
+            background-color: $primary-color;
             color: $text-color;
             font-family: sans-serif;
             padding: 10px;
             border-radius: 0px 0px 5px 5px;
 }
+.camera-box-big{
+    width:90%;
+    display: inline-block;
+    margin: 5px 5px 5px 5px;
+}
+.camera-screen1-big {
+            background-color: $primary-color;
+            padding:10px 10px 0px 10px;
+            border-radius: 5px 5px 0px 0px;
 
+          }
+
+div img {
+    width: 100%;
+
+}
+.move-up-buttons{
+    position: relative;
+    bottom: 20px;
+
+}
+
+.margin-left-button{
+    margin-left: 20px;
+}
+
+.font-title-camera{
+    font-family: 'Poppins', sans-serif;
+}
+
+// End of code for camera pages
 .margin-right {
     margin-right: 10px;
 }
@@ -360,9 +395,7 @@ h3{
         font-size: 12px;
 }
 
-.width-2{
-        width: 45%;
-}
+
 
 
 
@@ -543,9 +576,10 @@ input:focus + .slider {
   box-shadow: 0 0 1px $primary-color;
 }
 
-input:checked + .slider:before {
+input:checked + .slider:before { 
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
+  -moz-transform: translateX(26px);
   transform: translateX(26px);
 }
 
@@ -569,7 +603,17 @@ input:checked + .slider:before {
 //media query only for mobile size and portrait tablet
 
 @media all and (max-width: 700px){
-	nav li br {
+	
+// Devices code
+.width-2{
+        width: 45%;
+}
+
+.hide-mobile{
+    display: none;
+}
+
+    nav li br {
 		display: none;
 	}
         
@@ -583,13 +627,25 @@ input:checked + .slider:before {
 
 
 
-        .fa-battery-half{
+    .fa-battery-half{
     font-size: 25px;
     padding-right: 10px;
     padding-top: 10px;
     float: right;
 }
+// header icons for mobile
+.left-home{
+    float: left;
+    margin-left: 10px;
 
+}
+
+.right-home{
+    float:right;
+    margin-right: 10px;
+}
+
+// End of header icons for mobile
 .fa-play-circle {
     
     font-size: 25px;
@@ -598,7 +654,13 @@ input:checked + .slider:before {
     float: right;
 }
 
+// code for language page
 
+.language-tablet{
+    background-color: $secondary-color;
+    width: 70%;
+    border-radius: 5px;
+}
 
 //For battery block in smoke alarms
 .width-main{
@@ -633,11 +695,44 @@ input:checked + .slider:before {
         top: 7px;
         right: 5px;
 }
+
+// code for language page
+
+
 //media query only for tablet landscape
 
 @media all and (min-width: 701px)
 {
-        
+
+
+.fa-minus-circle  {
+    font-size: 20px;
+}      
+
+.fa-plus-circle{
+    font-size: 20px;
+}
+
+// width for device divs
+.width-2{
+        width: 20%;
+        text-align: center;
+}
+
+.width-3{
+    width: 7%;
+    text-align: center;
+} 
+
+.hide-mobile{
+    display: block;
+}
+
+.hide-tablet{
+    display: none;
+}
+
+
 .container{
    //  width: 100%;
    //  //height: 640px;
@@ -647,7 +742,18 @@ input:checked + .slider:before {
     
 }
 
+// header icons for tablet
+.left-home{
+    float: left;
+    margin-left: 20px;
+}
 
+.right-home{
+    float:right;
+    margin-right: 20px;
+}
+
+// End of header icons for mobile
 
 //For battery block in smoke alarms
 .width-main{
@@ -724,7 +830,16 @@ nav{
         
 
 }
+// language page
 
+.language-tablet{
+    position: relative;
+    right: 50px;
+}
+.width-50{
+    width: 30%;
+    height: 50px;
+}
 .hide-tablet{
     display: none;
 }
@@ -782,9 +897,7 @@ nav{
         font-size: 12px;
 }
 
-.width-2{
-        width: 45%;
-}
+
 
 
 .hover ul li:hover{
