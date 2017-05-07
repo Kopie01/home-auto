@@ -46,11 +46,6 @@ nav{
             ul{ background-color: yellow;
                 height: 50px;
 
-
-
-               
-
-
                 li{
                     display: inline-block;
                     background-color: red;
@@ -236,12 +231,6 @@ h3{
             font-size: 18px;
             text-align: center;
 }
-
-
-
-
-
-
 
 
  // css for general box
@@ -580,9 +569,10 @@ input:focus + .slider {
   box-shadow: 0 0 1px $primary-color;
 }
 
-input:checked + .slider:before {
+input:checked + .slider:before { 
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
+  -moz-transform: translateX(26px);
   transform: translateX(26px);
 }
 
@@ -625,7 +615,7 @@ input:checked + .slider:before {
 
 
 
-        .fa-battery-half{
+    .fa-battery-half{
     font-size: 25px;
     padding-right: 10px;
     padding-top: 10px;
