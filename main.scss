@@ -12,6 +12,18 @@ $width-main:45%;
 
 $width-test:30%;
 
+// Mixins
+
+@mixin font(){
+    color: $text-color;
+    font-family:'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+@mixin standard(){
+    background-color: $secondary-color;
+    border-radius: 5px;
+}
 
 // General Nav
      
@@ -27,6 +39,8 @@ $width-test:30%;
 }
 
 nav{
+
+        background-color: yellow;
         ul{
              padding: 0;
              list-style: none;
@@ -37,14 +51,9 @@ nav{
                 margin: 5px;
                 border-radius: 5px;
 
-                .lights{
-                color: white;
-                font-family: 'Poppins', sans-serif;
-                font-size: 12px;
 
-
-                ul{ background-color: yellow;
-                    height: 50px;
+                ul{
+                     height: 50px;
 
                         li{
                             display: inline-block;
@@ -52,19 +61,16 @@ nav{
                             margin-right: 30px;
                             }
                     }   
-            }
+            
         }
         
                 ul li{
                     background-color: $secondary-color;   
                 }
         
-                a{
-                    color: $text-color;
+                a{  @include font();
                     display:inline-block;
                     padding: 5px 10px;
-                    text-decoration: none;
-                    font-family: 'Poppins', sans-serif;
                     font-size: 14px;
                     margin-bottom: 5px;
 
@@ -81,11 +87,10 @@ nav{
     width:60%;
     padding: 20px;
     background-color: $primary-color;
-    font-family: 'Poppins', sans-serif;
     border-radius: 5px;
     margin: 0 auto;
-            a{text-decoration: none;
-                color: $text-color;
+            a{
+                @include font();
                }
 }
 
@@ -102,12 +107,11 @@ h4{
 
 }
 .contact-icon{
-    background-color: $secondary-color;
+    @include standard();
     padding:10px 0px 10px 10px;
     width: 50px;
     float: left;
     margin-right: 10px;
-    border-radius: 5px;
     color: $text-color;
     font-size: 30px;
 
@@ -123,13 +127,7 @@ h4{
     left: 7px;
 }
 
-.contact-margins{
-    // margin: 20px 5px 40px 0px;
-}
-
 .query-box{
-    // background-color: $secondary-color;
-    // padding:10px;
     width: 95%;
     margin-top: 40px;
     border-radius: 5px;
@@ -138,13 +136,12 @@ h4{
 }
 
 .extra-padding-contact{
+    @include standard();
     padding: 0px 200px 150px 0px;
     position: relative;
     bottom: 30px;
     width: 37%;
-    border-radius: 5px;
     border-width: 5px;
-    border-color: $secondary-color;
 
     
 }
@@ -158,20 +155,12 @@ h4{
     padding: 10px;
 }
 // End of contact page code
+
  // Main Logo
 .logo{
         width:250px;
         margin: 0 auto;
 }
-
-// .home{
-//     width: 10%;
-//     padding-left: 5px;
-//     padding-right:5px;
-//     padding-bottom: 5px;
-// }
-
-// User profile pic
 
 .user{
 
@@ -228,7 +217,7 @@ h4{
     display: inline-block;
 }
 
-h2 {
+h2 {        
             color: $primary-color;
             font-family: 'Poppins', sans-serif;
             font-size: 18px;
@@ -243,13 +232,11 @@ h3{
 
 
  // css for general box
-.box{
-            color: $text-color;
+.box{       
+            @include font();
             background-color: $secondary-color;  
             display:inline-block;
             padding: 25px;
-            text-decoration: none;
-            font-family: sans-serif;
             border-radius: 10px;
             margin: 5px 5px 5px 5px;
             
@@ -358,7 +345,7 @@ div img {
 .container{
     width: 90%;
     height: 640px;
-   //background-color:
+   background-color: red;
     margin: 0 auto;
     
 }
@@ -657,9 +644,8 @@ input:checked + .slider:before {
 // code for language page
 
 .language-tablet{
-    background-color: $secondary-color;
+    @include standard();
     width: 70%;
-    border-radius: 5px;
 }
 
 //For battery block in smoke alarms
@@ -733,15 +719,6 @@ input:checked + .slider:before {
 }
 
 
-.container{
-   //  width: 100%;
-   //  //height: 640px;
-   // //background-color:
-   //  margin: 0 auto;
-   //  //background-color: green;
-    
-}
-
 // header icons for tablet
 .left-home{
     float: left;
@@ -801,24 +778,15 @@ nav{
             .nav-line {
             	display: none;
             }
-            .lights{
-            color: red;
-            font-family: 'Poppins', sans-serif;
-            font-size: 12px;
-            //display: inline-block;
-}
+            
         }
         
         ul li{
             background-color: $secondary-color;   
         }
         
-        a{
-            color: $text-color;
-            //display:inline-block;
-            //padding: 5px 10px;
-            text-decoration: none;
-            font-family: 'Poppins', sans-serif;
+        a{  
+            @include font();
             font-size: 14px;
             margin-bottom: 5px;
             padding: 0px;
@@ -828,7 +796,6 @@ nav{
 
         }
         
-
 }
 // language page
 
@@ -853,14 +820,11 @@ nav{
 
 //icon positioning for tablet
 .icon-main-padding{
-      
-        
         position: relative;
         right:5px;
         padding-left: 10px;
         padding-top: 10px;
         font-size: 30px;
-        
 }
 
 .settings-cog{
@@ -870,15 +834,10 @@ nav{
 }
 .fa-battery-half{
     font-size: 25px;
-   
-    
 }
 
 .fa-play-circle {
-    
     font-size: 25px;
-   
-    
 }
 
 .fa-plus-circle{
@@ -897,9 +856,6 @@ nav{
         font-size: 12px;
 }
 
-
-
-
 .hover ul li:hover{
     background:$hover-color;
 }
@@ -907,8 +863,6 @@ nav{
 .slider-pos{
         position: relative;
         right: 35%;
-        
-        
 }
 
 
@@ -916,7 +870,6 @@ nav{
 
 .slider-range{
         
-        //background-color: $primary-color;
         border-radius: 5px 5px 5px 5px;
         width: 50%;
         
@@ -951,4 +904,9 @@ nav{
 .log-in{
     padding: 20px;
 }
+}
+
+@media all and (min-width: 980px)
+{
+
 }

@@ -87,7 +87,7 @@
                         <li class="temp-padding"><a>Bedrooms</a><br>
                         <div class="slider-pos-temp-lights slider-pos">
                                 <label class="switch">
-                                <input type="checkbox">
+                                <input type="checkbox" id="Kitchen-Lights" class="toggleSwitch">
                                 <div class="slider round"></div>
                                 </label>
                         </div><input type="range" class="slider-range-tablet"></li>
@@ -146,7 +146,22 @@
     </div>
 
 
-    
+    <script type="text/javascript">
+    if (localStorage.getItem("switches") !== null) {
+        var Storage = JSON.parse(localStorage.getItem("switches"));
+        for (var i = 0; i < Storage.length; i++) {
+            if(Storage[i]['active'] === 'true' ){
+                var SwitchID = Storage[i]['switch'];
+                var SwitchExists = document.getElementById(SwitchID);
+                if(SwitchExists !== null){
+                    SwitchExists.checked = true;
+                }
+            }
+        };
+    }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>   
     
 </body>
 </html>
