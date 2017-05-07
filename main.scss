@@ -293,6 +293,7 @@ h3{
     display: block;
 }
 
+// Code for camera pages
 .camera-box1{
     //margin-bottom: 20px;
     width:300px;
@@ -301,21 +302,26 @@ h3{
     
 }
 .camera-screen1 {
-            background-color: gray;
-            padding:10px;
-            height: 70px;
+            background-color: $primary-color;
+            padding:10px 10px 0px 10px;
             border-radius: 5px 5px 0px 0px;
             height: 150px;
-}
+
+          }
 
 .title-camera-box {
-            background-color: $secondary-color;
+            background-color: $primary-color;
             color: $text-color;
             font-family: sans-serif;
             padding: 10px;
             border-radius: 0px 0px 5px 5px;
 }
 
+div img {
+    width: 100%;
+
+}
+// End of code for camera pages
 .margin-right {
     margin-right: 10px;
 }

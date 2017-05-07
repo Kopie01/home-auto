@@ -184,18 +184,20 @@ h3 {
   margin: 5px 5px 5px 5px; }
 
 .camera-screen1 {
-  background-color: gray;
-  padding: 10px;
-  height: 70px;
+  background-color: #004378;
+  padding: 10px 10px 0px 10px;
   border-radius: 5px 5px 0px 0px;
   height: 150px; }
 
 .title-camera-box {
-  background-color: #4c9cd7;
+  background-color: #004378;
   color: white;
   font-family: sans-serif;
   padding: 10px;
   border-radius: 0px 0px 5px 5px; }
+
+div img {
+  width: 100%; }
 
 .margin-right {
   margin-right: 10px; }
