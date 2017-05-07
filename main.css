@@ -459,6 +459,15 @@ input:checked + .slider:before {
   right: 5px; }
 
 @media all and (min-width: 701px) {
+  .edit {
+    padding: 20px 10px 10px 20px; }
+
+  .user-box-central {
+    text-align: center; }
+
+  .user-box {
+    width: 50%; }
+
   .fa-minus-circle {
     font-size: 20px; }
 
@@ -603,6 +612,10 @@ input:checked + .slider:before {
   .log-in {
     padding: 20px; } }
 @media all and (min-width: 1200px) {
+  .user img {
+    width: 20%;
+    margin-bottom: 30px; }
+
   ul {
     text-align: center; }
 
