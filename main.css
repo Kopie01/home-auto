@@ -428,6 +428,11 @@ input:checked + .slider:before {
     padding-top: 10px;
     float: right; }
 
+  .language-tablet {
+    background-color: #4c9cd7;
+    width: 70%;
+    border-radius: 5px; }
+
   .width-main {
     width: 45%; }
 
@@ -520,6 +525,14 @@ input:checked + .slider:before {
     margin-bottom: 5px;
     padding: 0px;
     text-align: center; }
+
+  .language-tablet {
+    position: relative;
+    right: 50px; }
+
+  .width-50 {
+    width: 30%;
+    height: 50px; }
 
   .hide-tablet {
     display: none; }
