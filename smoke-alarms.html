@@ -40,7 +40,7 @@
                         <li class="width-main tablet "><div class="a-replace">Alerts</div><br>
                             <div class="slider-pos ">
                                 <label class="switch">
-                                <input type="checkbox">
+                                <input type="checkbox" id="Alerts" class="toggleSwitch"">
                                 <div class="slider round"></div>
                                 </label>
                             </div></li>
@@ -68,5 +68,22 @@
                 
     </div>
 
+<script type="text/javascript">
+    if (localStorage.getItem("switches") !== null) {
+        var Storage = JSON.parse(localStorage.getItem("switches"));
+        for (var i = 0; i < Storage.length; i++) {
+            if(Storage[i]['active'] === 'true' ){
+                var SwitchID = Storage[i]['switch'];
+                var SwitchExists = document.getElementById(SwitchID);
+                if(SwitchExists !== null){
+                    SwitchExists.checked = true;
+                }
+            }
+        }
+    }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/ToggleSwitch.js"></script>
+    
 </body>
 </html>
