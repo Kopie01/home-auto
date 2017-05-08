@@ -612,6 +612,12 @@ input:checked + .slider:before {
   .log-in {
     padding: 20px; } }
 @media all and (min-width: 1200px) {
+  .main-camera-div {
+    text-align: center; }
+
+  .left-numbers {
+    float: left; }
+
   .user img {
     width: 20%;
     margin-bottom: 30px; }
