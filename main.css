@@ -570,6 +570,10 @@ input:checked + .slider:before {
     padding: 20px; } }
 
 @media all and (min-width: 1200px) {
+  .slider-range {
+    border-radius: 5px 5px 5px 5px;
+    position: relative;
+    bottom: 15px; }
   .main-camera-div {
     text-align: center; }
   .left-numbers {

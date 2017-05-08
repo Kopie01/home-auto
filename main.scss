@@ -918,6 +918,17 @@ nav{
 
 @media all and (min-width: 1200px)
 {
+    
+    .slider-range{
+        
+        //background-color: $primary-color;
+        border-radius: 5px 5px 5px 5px;
+        position: relative;
+        bottom:15px;
+        //bottom: 10px;
+        
+   
+}
     .main-camera-div{
         text-align: center;
             }
