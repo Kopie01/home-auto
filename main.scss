@@ -66,14 +66,15 @@ nav{
                 ul li{
                     background-color: $secondary-color;   
                 }
-        
-                a{  @include font();
+                   .a-replace { @include font();
                     display:inline-block;
                     padding: 5px 10px;
                     font-size: 14px;
                     margin-bottom: 5px;
-
-                }
+                    
+                    
+                   }
+                
         
 
     }
@@ -601,6 +602,7 @@ input:checked + .slider:before {
 
     nav li br {
 		display: none;
+        
 	}
         
 

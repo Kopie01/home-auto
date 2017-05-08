@@ -10,6 +10,7 @@
 nav ul {
   padding: 0;
   list-style: none; }
+
 nav li {
   padding: 10px;
   margin: 5px;
@@ -19,9 +20,11 @@ nav li {
     nav li ul li {
       display: inline-block;
       margin-right: 30px; }
+
 nav ul li {
   background-color: #4c9cd7; }
-nav a {
+
+nav .a-replace {
   color: white;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
@@ -268,9 +271,9 @@ div img {
 
 input[type=range] {
   /*removes default webkit styles
-  -webkit-appearance: none;
-  
-  /*fix for FF unable to apply focus style bug */
+    -webkit-appearance: none;
+    
+    /*fix for FF unable to apply focus style bug */
   /*required for proper track sizing in FF*/
   width: 100%; }
 
@@ -402,48 +405,39 @@ input:checked + .slider:before {
 @media all and (max-width: 700px) {
   .width-2 {
     width: 45%; }
-
   .hide-mobile {
     display: none; }
-
   nav li br {
     display: none; }
-
   .icon-main-padding {
     padding-left: 10px;
     padding-top: 10px;
     font-size: 25px; }
-
   .fa-battery-half {
     font-size: 25px;
     padding-right: 10px;
     padding-top: 10px;
     float: right; }
-
   .left-home {
     float: left;
     margin-left: 10px; }
-
   .right-home {
     float: right;
     margin-right: 10px; }
-
   .fa-play-circle {
     font-size: 25px;
     padding-right: 5px;
     padding-top: 10px;
     float: right; }
-
   .language-tablet {
     background-color: #4c9cd7;
     border-radius: 5px;
     width: 70%; }
-
   .width-main {
     width: 45%; }
-
   .width-test {
     width: 30%; } }
+
 .slider-range {
   border-radius: 0px 0px 5px 5px;
   position: relative;
@@ -461,61 +455,44 @@ input:checked + .slider:before {
 @media all and (min-width: 701px) {
   .edit {
     padding: 20px 10px 10px 20px; }
-
   .user-box-central {
     text-align: center; }
-
   .user-box {
     width: 50%; }
-
   .fa-minus-circle {
     font-size: 20px; }
-
   .fa-plus-circle {
     font-size: 20px; }
-
   .width-2 {
     width: 20%;
     text-align: center; }
-
   .width-3 {
     width: 7%;
     text-align: center; }
-
   .hide-mobile {
     display: block; }
-
   .hide-tablet {
     display: none; }
-
   .left-home {
     float: left;
     margin-left: 20px; }
-
   .right-home {
     float: right;
     margin-right: 20px; }
-
   .width-main {
     width: 30%; }
-
   .width-test {
     width: 20%; }
-
   .left {
     display: none; }
-
   .position-left {
     position: relative;
     right: 126px; }
-
   .tablet {
     text-align: center; }
-
   .box-padding {
     padding-top: 65px;
     padding-bottom: 65px; }
-
   nav ul {
     padding: 0; }
   nav li {
@@ -536,103 +513,79 @@ input:checked + .slider:before {
     margin-bottom: 5px;
     padding: 0px;
     text-align: center; }
-
   .language-tablet {
     position: relative;
     right: 50px; }
-
   .width-50 {
     width: 30%;
     height: 50px; }
-
   .hide-tablet {
     display: none; }
-
   .fa {
     color: white; }
-
   .icon-main-padding {
     position: relative;
     right: 5px;
     padding-left: 10px;
     padding-top: 10px;
     font-size: 30px; }
-
   .settings-cog {
     padding-top: 10px;
     margin-right: 10px;
     font-size: 25px; }
-
   .fa-battery-half {
     font-size: 25px; }
-
   .fa-play-circle {
     font-size: 25px; }
-
   .centre {
     text-align: center; }
-
   .log-in {
     width: 100px;
     margin: 0 auto; }
-
   .font {
     font-size: 12px; }
-
   .hover ul li:hover {
     background: #004378; }
-
   .slider-pos {
     position: relative;
     right: 35%; }
-
   .slider-range {
     border-radius: 5px 5px 5px 5px;
     width: 50%; }
-
   .slider-range-tablet {
     display: none; }
-
   .slider-range-tablet-over {
     display: block;
     position: relative;
     top: 15px; }
-
   .temp-padding {
     padding: 65px 40px 65px 40px;
     text-align: center; }
-
   .temp-range {
     padding: 37px 30px 101px 30px; }
-
   .numbers {
     position: relative;
     top: 40px; }
-
   .log-in {
     padding: 20px; } }
+
 @media all and (min-width: 1200px) {
   .main-camera-div {
     text-align: center; }
-
   .left-numbers {
     float: left; }
-
   .user img {
     width: 20%;
     margin-bottom: 30px; }
-
   ul {
     text-align: center; }
-
   h2 {
     text-align: center; }
-
   .contact-centre {
     text-align: center; }
-
   .contact-icon {
     display: none; } }
+
 @media all and (min-width: 1700px) {
   .container {
     position: absolute;
